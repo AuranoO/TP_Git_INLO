@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-    documentation here
+    get_valid_adn allows user to check if string is only nucleotide
 """
 
 __author__ = 'Anouar TOUMI'
