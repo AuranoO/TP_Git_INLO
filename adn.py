@@ -28,3 +28,5 @@ def get_valid_adn(prompt="Chaine d'ADN : "):
         print("La chaine d'ADN est valide")
     else:
         print("La chaine d'ADN n'est pas valide")
+
+get_valid_adn()
