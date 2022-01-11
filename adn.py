@@ -22,11 +22,12 @@ def is_valid(adn_str: str)->bool:
         return False
 
 
-def get_valid_adn(prompt="Chaine d'ADN : "):
+def get_valid_adn(prompt="Chaine d'ADN : ")->str:
     input_sequence = input(prompt)
     if is_valid(input_sequence) is True:
         print("La chaine d'ADN est valide")
     else:
         print("La chaine d'ADN n'est pas valide")
+    return input_sequence
 
-get_valid_adn()
+print(get_valid_adn())
