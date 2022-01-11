@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-    documentation here
+    get_valid_adn allows user to check if string is only nucleotide
 """
 #Version develop
 __author__ = 'Anouar TOUMI'
@@ -29,5 +29,3 @@ def get_valid_adn(prompt="Chaine d'ADN : ")->str:
     else:
         print("La chaine d'ADN n'est pas valide")
     return input_sequence
-
-print(get_valid_adn())
