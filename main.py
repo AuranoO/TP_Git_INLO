@@ -1,7 +1,5 @@
 #import library
-import adn.py
+import adn
 
-#call function
-if__name__=="__main__" :
-	
-	print(get_valid_adn())
+if __name__=="__main__" :
+    print(get_valid_adn())
