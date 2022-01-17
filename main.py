@@ -1,7 +1,8 @@
 #import library
-import adn.py
+import adn
+import select_fasta 
 
-#call function
-if__name__=="__main__" :
-	
-	print(get_valid_adn())
+
+if __name__=="__main__" :
+	select_fasta.main()
+	adn.get_valid_adn()
