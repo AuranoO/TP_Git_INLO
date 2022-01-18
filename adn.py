@@ -1,24 +1,29 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """  Checking if a str is a valid nucleotides strand or not """
+__author__ = 'Anouar TOUMI'
 
 import re
-
-__author__ = 'Anouar TOUMI'
 
 
 def purify(adn_str: str) -> str or None:
     """
-    purify a string from some character
+    purify string from some character
+    parameter : adn_str is a string
+    return : adn_str_purify is the same string purified
     """
     if adn_str is None or len(adn_str) == 0:
         return None
-    adn_str_purify = adn_str.replace(" ", "").replace("\n", "").replace('\t', '')
+    adn_str_purify = adn_str.replace(
+        " ", "").replace("\n", "").replace('\t', '')
     return adn_str_purify
+
 
 def is_valid(adn_str: str) -> bool:
     """
-    Check is purified string contains only nucleotides
+    Check if string contains only nucleotides
+    parameter : adn_str is a string
+    return : bool if adn_str is only nucleotides
     """
     if adn_str is None:
         return False
@@ -28,6 +33,8 @@ def is_valid(adn_str: str) -> bool:
 def get_valid_adn(adn_str: str) -> str:
     """
     Use is_valid() function to check if str are only nucleotides and return str answer
+    parameter : adn_str is a string
+    return : a string to answer if adn_str is a valid ADN strand or not
     """
     if is_valid(adn_str) is False:
         nuc_count = 1
@@ -38,5 +45,4 @@ def get_valid_adn(adn_str: str) -> str:
                     str(nuc_count) + " est " + i
                 return answer
             nuc_count += 1
-    else:
-        return "La chaine d'ADN est valide"
+    return "La chaine d'ADN est valide"

@@ -1,26 +1,30 @@
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Create parser to use a fasta input file and verify if sequence inside are valid"""
+__author__ = 'Anouar TOUMI'
+
 import argparse
 import sys
 import adn
 
-__author__ = 'Anouar TOUMI'
-
 
 def create_parser() -> argparse.ArgumentParser:
-    """ Declares new parser and adds parser arguments """
+    """ Declares new parser and adds parser arguments
+    parameter : none
+    return : argparse.ArgumentParser """
     program_description = ''' reading fasta file and checking sequence format '''
     parser = argparse.ArgumentParser(
         add_help=True, description=program_description)
     parser.add_argument('-i', '--inputfile', default=sys.stdin,
-                        help="required path of input file in fasta format", type=argparse.FileType("r"),
-                        required=True)
+                        help="required path of input file in fasta format",
+                        type=argparse.FileType("r"), required=True)
     return parser
 
 
 def main() -> None:
-    """ Main function for reading fasta file and checking sequence format """
+    """ Main function for reading fasta file and checking sequence format 
+    parameter : none
+    return : none"""
     str_seq = ""
     dict_seq = {}
     parser = create_parser()
