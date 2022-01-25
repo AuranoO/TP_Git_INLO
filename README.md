@@ -1,14 +1,8 @@
-README TP 2 UPDATE
-======
-Usage: select_fasta_parser.py [-h] -i INPUTFILE
+TP 3
+=====
+Creation of class for chained list  
+The file chained_list.py contains the class Node and ChainedList and is use as a library on the test_chained_list.py where we run some test like adding random values in list.  
+The list is always sorted.  
+to try :
 
-reading fasta file and checking sequence format
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -i INPUTFILE, --inputfile INPUTFILE
-                        required path of input file in fasta format
-<hr>
-Please be sure to have select_fasta_parser.py and adn.py in the same folder  
-
-main.py is not needed anymore
+python3 test_chained_list.py 
