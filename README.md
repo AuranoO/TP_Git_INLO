@@ -1,6 +1,4 @@
-TP test unitaire
+TP MVC
 =====
-File are in test folder  
-download the folder and launch a terminal in
-Run test script with:  
-python3 linkedlist_test_unitaire.py
+Take controller.py, view_obj.py and model.py  
+and run controller.py
